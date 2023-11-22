@@ -1,4 +1,5 @@
-# openapi
+# Wikipedia API
+
 This API provides cacheable and straightforward access to Wikimedia content and data, in machine-readable formats.
 ### Global Rules
 - Limit your clients to no more than 200 requests/s to this API.
@@ -217,7 +218,4 @@ Endpoints do not require authorization.
 
 ## Author
 
-
-
-#   w i k i p e d i a _ a p i  
- 
+Kingkor Roy Tirtho
