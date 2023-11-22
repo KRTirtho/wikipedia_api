@@ -2,6 +2,14 @@ name: wikipedia_api
 version: 0.1.0
 description: Wikipedia API for dart and flutter
 homepage: https://github.com/KRTirtho/wikipedia_api
+repository: https://github.com/KRTirtho/wikipedia_api
+
+topics:
+  - wikipedia
+  - wikipedia-api
+  - wikipedia-dart
+  - wikipedia-flutter
+
 environment:
   sdk: '>=3.2.0 <4.0.0'
 
