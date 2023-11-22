@@ -204,9 +204,7 @@ class TransformsApi {
 
     const contentTypes = <String>['application/x-www-form-urlencoded'];
 
-    if (html != null) {
-      formParams[r'html'] = parameterToString(html);
-    }
+    formParams[r'html'] = parameterToString(html);
 
     return apiClient.invokeAPI(
       path,
@@ -291,10 +289,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (html != null) {
-      hasFields = true;
-      mp.fields[r'html'] = parameterToString(html);
-    }
+    hasFields = true;
+    mp.fields[r'html'] = parameterToString(html);
     if (hasFields) {
       postBody = mp;
     }
@@ -389,10 +385,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (html != null) {
-      hasFields = true;
-      mp.fields[r'html'] = parameterToString(html);
-    }
+    hasFields = true;
+    mp.fields[r'html'] = parameterToString(html);
     if (scrubWikitext != null) {
       hasFields = true;
       mp.fields[r'scrub_wikitext'] = parameterToString(scrubWikitext);
@@ -496,10 +490,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (html != null) {
-      hasFields = true;
-      mp.fields[r'html'] = parameterToString(html);
-    }
+    hasFields = true;
+    mp.fields[r'html'] = parameterToString(html);
     if (scrubWikitext != null) {
       hasFields = true;
       mp.fields[r'scrub_wikitext'] = parameterToString(scrubWikitext);
@@ -613,10 +605,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (html != null) {
-      hasFields = true;
-      mp.fields[r'html'] = parameterToString(html);
-    }
+    hasFields = true;
+    mp.fields[r'html'] = parameterToString(html);
     if (scrubWikitext != null) {
       hasFields = true;
       mp.fields[r'scrub_wikitext'] = parameterToString(scrubWikitext);
@@ -721,10 +711,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (bodyOnly != null) {
       hasFields = true;
       mp.fields[r'body_only'] = parameterToString(bodyOnly);
@@ -828,10 +816,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (bodyOnly != null) {
       hasFields = true;
       mp.fields[r'body_only'] = parameterToString(bodyOnly);
@@ -945,10 +931,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (bodyOnly != null) {
       hasFields = true;
       mp.fields[r'body_only'] = parameterToString(bodyOnly);
@@ -1049,10 +1033,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (hasFields) {
       postBody = mp;
     }
@@ -1130,10 +1112,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (hasFields) {
       postBody = mp;
     }
@@ -1221,10 +1201,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (hasFields) {
       postBody = mp;
     }
@@ -1327,10 +1305,8 @@ class TransformsApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (wikitext != null) {
-      hasFields = true;
-      mp.fields[r'wikitext'] = parameterToString(wikitext);
-    }
+    hasFields = true;
+    mp.fields[r'wikitext'] = parameterToString(wikitext);
     if (hasFields) {
       postBody = mp;
     }

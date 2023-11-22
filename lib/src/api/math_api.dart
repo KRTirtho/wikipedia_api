@@ -41,10 +41,9 @@ class MathApi {
 
     bool hasFields = false;
     final mp = MultipartRequest('POST', Uri.parse(path));
-    if (q != null) {
-      hasFields = true;
-      mp.fields[r'q'] = parameterToString(q);
-    }
+
+    hasFields = true;
+    mp.fields[r'q'] = parameterToString(q);
     if (hasFields) {
       postBody = mp;
     }

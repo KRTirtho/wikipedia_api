@@ -6,7 +6,6 @@ import 'dart:io';
 
 import 'package:collection/collection.dart';
 import 'package:http/http.dart';
-import 'package:intl/intl.dart';
 
 part './api_client.dart';
 part './api_helper.dart';
@@ -90,7 +89,6 @@ var _defaultApiClient = ApiClient();
 const _delimiters = {'csv': ',', 'ssv': ' ', 'tsv': '\t', 'pipes': '|'};
 const _dateEpochMarker = 'epoch';
 const _deepEquality = DeepCollectionEquality();
-final _dateFormatter = DateFormat('yyyy-MM-dd');
 final _regList = RegExp(r'^List<(.*)>$');
 final _regSet = RegExp(r'^Set<(.*)>$');
 final _regMap = RegExp(r'^Map<String,(.*)>$');
