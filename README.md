@@ -31,21 +31,11 @@ Dart 2.12 or later
 
 ## Installation & Usage
 
-### Github
-If this Dart package is published to Github, add the following dependency to your pubspec.yaml
-```
-dependencies:
-  openapi:
-    git: https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+Run the following to install:
+```shell
+$ flutter pub add wikipedia_api
 ```
 
-### Local
-To use the package in your local drive, add the following dependency to your pubspec.yaml
-```
-dependencies:
-  openapi:
-    path: /path/to/openapi
-```
 
 ## Tests
 
@@ -216,6 +206,6 @@ Class | Method | HTTP request | Description
 Endpoints do not require authorization.
 
 
-## Author
+## Library Author
 
 Kingkor Roy Tirtho
