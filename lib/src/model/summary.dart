@@ -8,6 +8,7 @@ part of wikipedia_api;
 class Summary {
   /// Returns a new [Summary] instance.
   Summary({
+    this.type,
     required this.titles,
     this.title,
     this.displaytitle,
@@ -23,6 +24,7 @@ class Summary {
     this.coordinates,
   });
 
+  String? type;
   TitlesSet titles;
 
   /// The page title. Deprecated: Use `titles.normalized` instead.
@@ -116,6 +118,7 @@ class Summary {
   bool operator ==(Object other) =>
       identical(this, other) ||
       other is Summary &&
+          other.type == type &&
           other.titles == titles &&
           other.title == title &&
           other.displaytitle == displaytitle &&
@@ -134,6 +137,7 @@ class Summary {
   int get hashCode =>
       // ignore: unnecessary_parenthesis
       (titles.hashCode) +
+      (type == null ? 0 : type!.hashCode) +
       (title == null ? 0 : title!.hashCode) +
       (displaytitle == null ? 0 : displaytitle!.hashCode) +
       (pageid == null ? 0 : pageid!.hashCode) +
@@ -149,11 +153,16 @@ class Summary {
 
   @override
   String toString() =>
-      'Summary[titles=$titles, title=$title, displaytitle=$displaytitle, pageid=$pageid, extract=$extract, extractHtml=$extractHtml, thumbnail=$thumbnail, originalimage=$originalimage, lang=$lang, dir=$dir, timestamp=$timestamp, description=$description, coordinates=$coordinates]';
+      'Summary[type=$type, titles=$titles, title=$title, displaytitle=$displaytitle, pageid=$pageid, extract=$extract, extractHtml=$extractHtml, thumbnail=$thumbnail, originalimage=$originalimage, lang=$lang, dir=$dir, timestamp=$timestamp, description=$description, coordinates=$coordinates]';
 
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
     json[r'titles'] = this.titles;
+    if (this.type != null) {
+      json[r'type'] = this.type;
+    } else {
+      json[r'type'] = null;
+    }
     if (this.title != null) {
       json[r'title'] = this.title;
     } else {
@@ -226,6 +235,7 @@ class Summary {
       }());
 
       return Summary(
+        type: mapValueOfType<String>(json, r'type'),
         titles: TitlesSet.fromJson(json[r'titles'])!,
         title: mapValueOfType<String>(json, r'title'),
         displaytitle: mapValueOfType<String>(json, r'displaytitle'),

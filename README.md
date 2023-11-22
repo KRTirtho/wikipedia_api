@@ -1,4 +1,4 @@
-# Wikipedia API
+# Wikipedia API (Generated using [OpenAPI Generators][generator-link])
 
 This API provides cacheable and straightforward access to Wikimedia content and data, in machine-readable formats.
 ### Global Rules
@@ -209,3 +209,5 @@ Endpoints do not require authorization.
 ## Library Author
 
 Kingkor Roy Tirtho
+
+[generator-link]: https://openapi-generator.tech/
